@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@100;300;400&family=Rosarivo&display=swap');
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+}
+
+body {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.857;
+    color: #626c84;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 0.85714em;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+h2 {
+    font-family: Poppins;
+    font-size: 2rem;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+/* ========================================General classes =========================== */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ======================================= HEADER SECTION ============================== */
+.intro_section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 9rem;
+    border-end-end-radius: .5rem;
+    margin-left: 2rem;
+}
+
+.logo_c {
+    flex: 1;
+}
+
+.nav_items {
+    flex: 2;
+    justify-content: space-around;
+}
+
+.nav_items li {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.intro_top {
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    z-index: 9999;
+}
+
+.slider_c {
+    position: absolute;
+    top: -25%;
+    width: 100%;
+    left: 0;
+    height: 100%;
+}
+
+.slider {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+
+}
+
+.slider img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* -- ---------------------------------WELCOME SECTION ------------------------------------- -- */
+.welcome_s {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    margin: 1rem auto;
+    gap: 2rem;
+    min-height: 80vh;
+    margin-top: 4rem;
+}
+
+.welcome_left {
+    flex: 1;
+}
+
+.welcome_right {
+    flex: 1;
+}
+
+.left_title {
+    color: #041d57;
+    font-family: "Poppins", Sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1.4em;
+    letter-spacing: -0.2px;
+}
+
+.left_txt_1 {
+    margin-top: 1rem;
+}
+
+blockquote {
+    position: relative;
+    margin: 1rem auto;
+    padding-left: 20px;
+    border-left: 4px solid #e23e57;
+}
+
+.welcome_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.welcome_right img {
+    max-width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.donate_link {
+    background: #FA7214;
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 39px;
+    line-height: 1;
+    transition: all .4s ease;
+    display: inline-block;
+    margin: 1rem;
+}
+
+.donate_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.donate_btn i {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.donate_btn span {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-align: center;
+}
+
+/* -- -----------------------------OUR CONTEXTS ------------------------- -- */
+.our_context {
+    background-color: #f2f6f9;
+    min-height: 100vh;
+    padding: 1rem 0 2rem 0;
+}
+
+.title_line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 8;
+}
+
+.context_title {
+    color: #041D57;
+    font-size: 3.28571em;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    position: relative;
+    z-index: 1;
+}
+
+.context_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.context_head_btn {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-align: center;
+    background: #FA7214;
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 39px;
+    flex: 1;
+}
+
+.context-title {
+    color: #041D57;
+    font-size: 3.28571em;
+    font-weight: 700;
+    letter-spacing: -.2px;
+    position: relative;
+    z-index: 1;
+}
+
+.xs-separetor {
+    height: 3px;
+    width: 100px;
+    background-color: #e23e57;
+    margin-bottom: 23px;
+}
+
+.context_info {
+    width: 80%;
+    margin: 1rem auto;
+    text-align: center;
+    color: #070707;
+    font-family: "Roboto", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.context_cards_c {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    grid-gap: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.card_top img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.mentorship, .mindset, .capacity, .children {
+    margin: .8rem auto;
+    display: inline-block;
+}
+
+.card_title_btn {
+    font-size: 14px;
+    text-shadow: 100px 98px 98px rgba(0, 0, 0, 0.3);
+    background-color: #e23e57;
+    border-radius: 3px;
+    padding: 5px 9px;
+    color: #fff !important;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0;
+    font-weight: 600;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.profile_icon {
+    border-radius: 50%;
+}
+
+.card_footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+.profile_name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.created_by {
+    font-size: .7rem;
+}
+
+.created_name {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    color: #111111;
+}
+
+.card {
+    background: white;
+}
+
+.card_bottom {
+    padding: 0rem 1rem .5rem 1rem;
+}
+
+.card_bottom_title {
+    margin: 1rem auto 2rem auto;
+}
+
+/* card 2 */
+.skills_c {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin: .8rem auto;
+}
+
+.skills_c a button {
+    background: #9064bf;
+}
+
+.mindset, .children {
+    background-color: #fe813a;
+}
+
+.capacity {
+    background-color: #2cc391;
+}
+
+/* ------------------------------------------ BENEFITS SECTION  ------------------- */
+.benefits_sec {
+    min-height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.head_imgs_c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.head_imgs_c img {
+    width: 50%;
+}
+
+.benefits_txt {
+    color: #041d57;
+    font-family: "Poppins", Sans-serif;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    letter-spacing: -0.2px;
+    padding: 1rem .2rem;
+    text-align: center;
+}
+
+.benefits_cards_c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.b_card_title {
+    font-size: 1.28571em;
+    font-weight: 700;
+    color: #041D57;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.icon-open-book, .icon-mozfest-logo, .icon-book, .icon-list-items, .icon-bookmark-small {
+    color: #FF5722;
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.icon-open-book::before {
+    content: "\e933";
+}
+
+.icon-mozfest-logo::before {
+    content: "\e94a";
+}
+
+.icon-book::before {
+    content: "\e906";
+}
+
+.icon-book::before {
+    content: "\e929";
+}
+
+.icon-bookmark-small {
+    content: "\e905";
+}
+
+/* ----------------------------------- MISSION SECTION ----------------------------------------- -- */
+.mission_sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #ffffff;
+    background-image: url("https://hafug.org/wp-content/uploads/2018/11/Volunteer-bg_img.png");
+    height: 79vh;
+    background-repeat: no-repeat;
+    background-position: cover;
+    margin-top: 5rem;
+}
+
+.mission_left {
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+.mission_left img {
+    border-radius: 50%;
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+}
+
+.mission_img {
+    left: 5%;
+    top: 30%;
+    width: 10rem !important;
+    height: 10rem !important;
+}
+
+.mission_1 {
+    top: 10%;
+    left: 50%;
+}
+
+.mission_2 {
+    top: 15%;
+    left: 80%;
+}
+
+.mission_3 {
+    top: 60%;
+    left: 50%;
+}
+
+.mission_4 {
+    top: 80%;
+    left: 10%;
+}
+
+.mission_right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2b3539;
+    flex: 1;
+    height: 100%;
+    margin-right: 4rem;
+}
+
+.mission_txt {
+    font-size: 39px;
+    width: 70%;
+    text-align: center;
+    padding: 0;
+    color: #ffffff;
+
+
+}
+
+.mission_btn i {
+    color: #ffffff;
+    margin-right: .5rem;
+    font-size: 1rem;
+
+}
+
+.mission_btn, .join_btn, .news_btn {
+    background-color: #FA7214;
+    padding: 15px 55px;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.25);
+    letter-spacing: .5px;
+    color: #ffffff;
+}
+
+/* ----------------------------------- PATERNS SECTION ----------------------------------------- -- */
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    background-image: url("https://hafug.org/wp-content/uploads/2018/04/map.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.patners_left {
+    width: 40%;
+    margin: 0 0 1rem auto;
+}
+
+.partners_head, .head_txt, .c_head_txt {
+    color: #041D57;
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: -.2px;
+    line-height: 4.5rem;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.partners_txt {
+    line-height: 2rem;
+}
+
+.join_btn {
+    margin-top: 1rem;
+}
+
+.patners_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 1rem 0 1rem auto;
+}
+
+.partners_logo_c, .partners_logo_c_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.25);
+}
+
+.patners_right img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.partners_center {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* ----------------------------------- NEWS SECTION ----------------------------------------- -- */
+.news_sec {
+    width: 80%;
+    margin: 0 auto;
+    min-height: 40vh;
+}
+
+.news_head {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.news_head_c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.news_txt {
+    width: 90%;
+}
+
+
+/* ----------------------------------- CONSORTIUM PARTNERS SECTION ----------------------------------------- -- */
+.c_partners_sec {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.c_head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slider_c_partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.slider_c_partners img {
+    width: 50%;
+}
+
+.swatches_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.swatch {
+    width: .5rem;
+    height: .5rem;
+    background: #20c997;
+    border-radius: 50%;
+}
+
+
+/* ----------------------------------- SUBSCRIPTION SECTION ----------------------------------------- -- */
+.subscribe_sec {
+    width: 100%;
+    background-color: #031A23;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 32vh;
+    padding: 1rem 0;
+}
+
+.footer_title {
+    color: #FA7214;
+    font-family: "Rosarivo", Sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.footer_sub_title {
+    text-align: center;
+    color: #FFFDFD;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.email_form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: .3rem;
+}
+
+.input_c span {
+    display: inline-block;
+    height: 100%;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    color: #0B5AE5;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: .5rem 0 0 .4rem;
+}
+
+.input_email {
+    width: 95%;
+    height: 100%;
+}
