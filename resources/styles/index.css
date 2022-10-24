@@ -735,11 +735,11 @@ blockquote {
 }
 
 .email_form {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
 }
 
 .input_c {
@@ -765,4 +765,232 @@ blockquote {
 .input_email {
     width: 95%;
     height: 100%;
+    font-size: .9rem;
+}
+
+.subscribe_btn {
+    color: #fff;
+    background-color: #E94A19;
+    border-radius: .2rem;
+    padding: .3rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    font-family: inherit;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.subscribe_btn i {
+    font-size: 1.5rem;
+}
+
+
+/* ----------------------------------- FOOTER SECTION ----------------------------------------- -- */
+footer {
+    background-color: #2b3539;
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    background-position: center right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/footer_map.png");
+}
+
+.footer_bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+}
+
+.footer_aboutus_c {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.about_us_c {
+    flex: 1;
+}
+
+.footer_prev_post_c {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.about_us_c h3, .footer_prev_post_c h3, .footer_socials_c h3 {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    font-size: 1.28571em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer_items .footer_item a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 1em;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-weight: normal !important;
+}
+
+.footer_logo_c {
+    flex: 1;
+}
+
+.footer_logo_c img {
+    max-width: 80%;
+    border-radius: .5rem;
+}
+
+
+.prev_post {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.post_img_c {
+    flex: 1;
+}
+
+.post_img_c a img {
+    min-width: 5rem;
+    max-width: 7rem;
+    border-radius: .5rem;
+}
+
+.post_hint {
+    flex: 2;
+}
+
+.post_title_hint a {
+    color: #ffffff;
+}
+
+.post_date_c i, .post_date_c a {
+    color: #ffffff;
+
+}
+
+.post_date_c i {
+    color: #2cc391;
+}
+
+.post_date_c a {
+    font-size: .6rem;
+}
+
+.socials_list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.social_list a {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.social_list {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.social_list:nth-child(1) {
+    background-color: #1da1f2;
+}
+
+.social_list:nth-child(2) {
+    background-color: #3b5998;
+}
+
+.social_list:nth-child(3) {
+    background-color: #1da1f2;
+}
+
+.address_info_c {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff1a;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 1.5rem 0;
+}
+
+.location, .contact_info, .email_info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.location i {
+    color: #e23e57;
+    font-size: 1.5rem;
+}
+
+.email_info i {
+    color: #f7a900;
+    font-size: 1.5rem;
+}
+
+.contact_info i {
+    color: #2cc391;
+    font-size: 1.5rem;
+}
+
+.copyright_c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff0d;
+    width: 95%;
+    margin: 0rem auto;
+    padding: 1rem 0;
+}
+
+.copyright_right {
+    flex: 1;
+}
+
+.copyright_right p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+}
+
+.copyright_left {
+    flex: 1;
+}
+
+.copyright_list a {
+    display: block;
+    color: #97b0ea;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+.copyright_lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
 }
