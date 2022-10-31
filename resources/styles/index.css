@@ -95,10 +95,16 @@ input {
 }
 
 /* ======================================= HEADER SECTION ============================== */
-.intro_section {
+.home_intro_sec {
     position: relative;
     width: 100%;
     min-height: 100vh;
+}
+
+.intro_section {
+    position: relative;
+    width: 100%;
+    min-height: 0vh;
 }
 
 .logo {
@@ -116,7 +122,7 @@ input {
     justify-content: space-around;
 }
 
-.nav_items li {
+.nav_items li a {
     color: white;
     font-size: 14px;
     font-weight: 600;
@@ -150,6 +156,23 @@ input {
     object-fit: cover;
     width: 100%;
     height: auto;
+}
+
+.header_revealer {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fa7414ef;
+    z-index: 99999;
+}
+
+.header_revealer img {
+    border-radius: .5rem;
+    width: 20%;
+    transform: scale(.5);
 }
 
 /* -- ---------------------------------WELCOME SECTION ------------------------------------- -- */
@@ -993,4 +1016,24 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex: 1;
+}
+
+/* ======================================== WHO WE ARE */
+.core_values_w {
+    display: flex;
+    align-items: center;
+}
+
+.our_core_values_c {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.our_core_values {
+    color: #131313;
+    transform: rotate(-90deg);
+    font-size: 5rem;
+    height: 100%;
+    white-space: nowrap;
 }
