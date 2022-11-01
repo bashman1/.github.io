@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@100;300;400&family=Rosarivo&display=swap');
 
+
 :root {
+    --e-global-color-text: #7A7A7A;
+    --gap: 2rem;
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -60,6 +63,17 @@ a {
     text-decoration: none;
 }
 
+p {
+    color: #121111;
+    font-family: "Poppins", Sans-serif;
+    font-size: 1.14286em;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
 button {
     outline: none;
     border: none;
@@ -94,11 +108,18 @@ input {
     align-items: center;
 }
 
+.c-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* ======================================= HEADER SECTION ============================== */
 .home_intro_sec {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 .intro_section {
@@ -1019,21 +1040,3 @@ footer {
 }
 
 /* ======================================== WHO WE ARE */
-.core_values_w {
-    display: flex;
-    align-items: center;
-}
-
-.our_core_values_c {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-
-.our_core_values {
-    color: #131313;
-    transform: rotate(-90deg);
-    font-size: 5rem;
-    height: 100%;
-    white-space: nowrap;
-}
