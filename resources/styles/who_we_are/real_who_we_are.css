@@ -1,0 +1,150 @@
+body {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.857;
+    color: #626c84;
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+}
+
+/* ==== general stylings */
+
+.img_blend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider_we {
+    width: 100%;
+    height: 100%;
+}
+
+.slider_we img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.overhead_c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 55%;
+    margin: 0 auto;
+    transform: translate(-50%);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.overhead_c img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.play_c {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FA7214;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+
+}
+
+.play_c i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* =================== who we are section =================== */
+.who_we_are_sec {
+    height: 100vh;
+    width: 90%;
+    margin: 20rem auto 0 auto;
+    overflow: hidden;
+}
+
+.top_title {
+    color: #041d57;
+    font-family: "Poppins", Sans-serif;
+    font-size: 3.28571rem;
+    line-height: 1.4em;
+    letter-spacing: -0.2px;
+}
+
+.top_subtitle {
+    color: #FA7214;
+}
+
+.top_para {
+    margin: 1rem 0;
+}
+
+.bottom_who_we_are {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: var(--gap);
+    margin-top: 1rem;
+
+}
+
+.bottom_card_title {
+    color: #041d57;
+    font-family: "Poppins", Sans-serif;
+    font-size: 1.85714rem;
+    font-weight: 700;
+}
+
+.bottom_card_txt {
+    overflow-wrap: break-word;
+}
+
+.our_core_values {
+    min-height: 100vh;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.ocv_title {
+    color: #131313;
+    transform: rotate(-90deg);
+    font-size: 4rem;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.ocv_txt {
+    font-family: Poppins;
+    font-weight: 400;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.ocv_para {
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.left_ocv {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_ocv {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+/* */
