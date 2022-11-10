@@ -71,7 +71,7 @@ p {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 button {
@@ -100,6 +100,8 @@ input {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .flex {
@@ -1041,3 +1043,367 @@ footer {
 }
 
 /* ======================================== WHO WE ARE */
+.oi_intro_c {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100vh;
+}
+
+.our_impact_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oi_h {
+    font-size: 3.71429em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.oi_txt {
+    font-size: 1.57143em;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: white;
+    font-size: 700;
+}
+
+.oi_list {
+    display: inline-block;
+    padding: 7px 22px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #9064bf;
+    border-radius: 2rem;
+}
+
+.oi_list a {
+    color: #FFFFFF;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.support_img_blend {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 0;
+
+}
+
+.oi_extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* ============================ OUR IMPACT SEC */
+.oi_sec {
+    min-height: 100vh;
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+
+.io_s_top {
+    margin: 2rem auto;
+}
+
+.io_s_top_head, .our_backers_head {
+    color: #041d57;
+    font-family: "Poppins", Sans-serif;
+    font-size: 3.28571em;
+    line-height: 1.4em;
+    letter-spacing: -0.2px;
+    text-align: center;
+}
+
+.io_head_sub {
+    color: #FA7214;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/*  */
+.io_s_bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    gap: 2rem;
+}
+
+.io_c_top {
+    display: flex;
+    gap: 1rem;
+}
+
+.io_c_top i {
+    color: #FA7214;
+    font-size: 3rem;
+}
+
+.io_c_top h5 {
+    color: #041D57;
+    font-size: 1.57143em;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/*  ===============CHANING PPLE LIFE ====================== */
+.changing_pl {
+    background-image: url("../images/chaning_ppl_bg.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.changing_pl_c {
+    row-gap: 4rem;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.changing_pple_head {
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* 
+ */
+.icon_n_uls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: .5rem 0;
+}
+
+.icon_n_uls i {
+    color: #FA7214;
+    font-size: 1.8rem;
+}
+
+.icon_n_uls p {
+    color: rgba(255, 255, 255, 0.753);
+    line-height: 1rem;
+    letter-spacing: 1px;
+}
+
+.changing_ppl_nums {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 3rem 2rem 0rem 2rem;
+}
+
+.changing_pple_num {
+    color: #ffffff;
+    font-family: "Poppins", Sans-serif;
+    font-size: 5.3em;
+    border-bottom: 2px solid white;
+}
+
+.changing_pple_txt {
+    font-size: 1.4rem;
+    color: white;
+    padding: 0 1rem;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1.5rem;
+}
+
+.changing_ppl_uls {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    width: 80%;
+    margin: 2.5rem auto 0 auto;
+
+}
+
+.pl_c_right {
+    position: relative;
+}
+
+.pl_c_right_arrows {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.next_btn, .prev_btn {
+    padding: 1rem;
+    background-color: #2cc391;
+    border-radius: 0;
+    cursor: pointer;
+    margin: 0;
+}
+
+.next_btn i, .prev_btn i {
+    font-size: 1rem;
+    color: white;
+}
+
+.pl_c_right img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*  ========================== our_backers */
+.our_backers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../images/map_green.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.our_backers_c {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+
+}
+
+.our_backers_bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem 1rem;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.our_backers_run_numbers {
+    line-height: 2.5rem;
+}
+
+.our_backers_run_numbers span {
+    font-size: 3rem;
+    color: #2cc391;
+    font-weight: 700;
+}
+
+.our_backers_run_numbers small {
+    font-family: "Poppins", Sans-serif;
+    font-size: 1.57143em;
+}
+
+.our_backers_head {
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #28a745;
+}
+
+/* ============================ GALLERY ----------------------- */
+.gallery {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.gallery_wrapper {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.gallery-top {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+    border-bottom: 2px solid #28a745;
+    white-space: nowrap;
+}
+
+.gallery_c {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem 0;
+}
+
+.gallery-bottom {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.gallery_photots_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 4rem;
+}
+
+.gallery_photots_left p {
+    text-align: center;
+}
+
+.recent {
+    background-image: url("../images/galley_gradient.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.gallery_hidding {
+    position: relative;
+    flex: 2;
+    height: 80vh;
+    width: 50%;
+
+}
+
+.img_c {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    margin: 1rem auto;
+    cursor: pointer;
+    transition: scale .75s ease;
+}
+
+.img_c:hover img {
+    transform: scale(1.05);
+    transition: all .75s ease;
+}
+
+
+.img_c img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    object-position: center right;
+    transition: all 0.75s;
+}
